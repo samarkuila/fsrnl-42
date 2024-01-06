@@ -1,0 +1,21 @@
+body{
+
+    background-color: beige;
+}
+
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:100vh;
+}
+
+
+.box1,.box2{
+    width: 200px;
+    height: 200px;    
+    border: 1px solid black;
+
+}

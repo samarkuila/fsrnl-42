@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+</head>
+<body>
+    <h2>Guess The Number</h2>
+    <p>We have selected a random number between 1-10. See if you can guess it.</p>
+    <form id="myform">
+        <table>
+            <tr>
+                <td>Enter a Guess</td>
+                <td><input type="number" id="userNumber" required></td>
+                <td><button type="button" onclick="checkGuess()">Submit</button></td>            
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            // Get the input value
+            const guessInput = document.getElementById('userNumber');
+            const userGuess = parseInt(guessInput.value);
+
+           
+            console.log("Input no: " + userGuess);
+
+            // Example logic for checking the guess against the random number
+            if (userGuess === randomNumber) {
+                alert("Congratulations! Your guess is correct.");
+            } else if (userGuess < randomNumber) {
+                alert("Please Increase");
+            } else {
+                alert("Please Decrease");
+            }
+        }
+    </script> 
+</body>
+</html>
