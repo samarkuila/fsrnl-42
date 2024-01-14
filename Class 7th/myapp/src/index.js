@@ -7,13 +7,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App 
-      image="https://www.istockphoto.com/photo/mahabaleshwar-and-panchagani-nature-and-hill-areas-gm1404885250-456973849"
-      heading = "This is 1st Head"
-      Description="Hello this the 1st descriptions"
-
-    
-    />
+    <App />
   </React.StrictMode>
 );
 

@@ -1,15 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
-import './index'
+import DataFetchUsingAPI from "./DataFetchUsingAPI";
+import React, { useState, useEffect } from "react";
 
-function App(image,heading,description) {
-  return (
-    <div className="app">
-      {image}
-      {heading}
-      {description}
-    </div>  
-  );
+function App(){
+
+return <DataFetchUsingAPI />
 }
 
 export default App;
